@@ -38,7 +38,7 @@ public class InvertedIndex extends Configured implements Tool {
 	@Override
 	public int run(String[] args) throws Exception {
 		System.out.println(Arrays.toString(args));
-		Job job = new Job(getConf(), "InvertedIndex_simple");
+		Job job = new Job(getConf(), "InvertedIndex");
 
 		job.setJarByClass(InvertedIndex.class);
 		job.setOutputKeyClass(Text.class);
